@@ -139,13 +139,13 @@ class AVLTree:
         }
         
 my_avl_tree = AVLTree()
-numbers = [1, 2, 3, 4, 5, 6, 23, 26, 21, 20, 11]
-# characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-for num in numbers:
-    my_avl_tree.insert(num)
-print(json.dumps(my_avl_tree.print_tree(my_avl_tree.root), indent=4))
-print("=======================================")
+# numbers = [1, 2, 3, 4, 5, 6, 23, 26, 21, 20, 11]
+characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+for char in characters:
+    my_avl_tree.insert(char)
+# print(json.dumps(my_avl_tree.print_tree(my_avl_tree.root), indent=4))
+# print("=======================================")
 
-my_avl_tree.delete(5)
+my_avl_tree.delete("E")
 print(json.dumps(my_avl_tree.print_tree(my_avl_tree.root), indent=4))
 print("=======================================")
